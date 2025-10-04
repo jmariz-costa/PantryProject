@@ -32,7 +32,6 @@ class NameTest {
         assertEquals("Name must not be null or blank", exception.getMessage());
     }
 
-    /// ////
     @Test
     void shouldReturnTrueWhenComparingNametoItself() {
         // Arrange
