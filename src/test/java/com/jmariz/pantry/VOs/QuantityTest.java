@@ -84,4 +84,29 @@ class QuantityTest {
         // Assert
         assertTrue(result);
     }
+
+    @Test
+    void shouldReturnQuantityValue() {
+        // Arrange
+        Quantity qt1 = new Quantity (2);
+
+        // Act
+        int result = qt1.getQuantity();
+
+        // assert
+        assertEquals(2, result);
+    }
+
+    @Test
+    void shouldReturnSameHashCode() {
+        // Arrange
+        Quantity qty1 = new Quantity(3);
+        Quantity qty2 = new Quantity(3);
+
+        // Act
+        int result = qty1.hashCode();
+
+        // Assert
+        assertEquals(qty2.hashCode(), result);
+    }
 }

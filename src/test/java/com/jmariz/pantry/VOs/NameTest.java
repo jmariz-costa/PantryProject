@@ -100,10 +100,10 @@ class NameTest {
     void shouldReturnSameHashCode() {
         // Arrange
         Name name1 = new Name("Test1");
-        Name name2 = new Name("Test2");
+        Name name2 = new Name("Test1");
 
         // Act
-        int result = name1.hashCode();
+        int result = name2.hashCode();
 
         // Assert
         assertEquals(name1.hashCode(), result);
