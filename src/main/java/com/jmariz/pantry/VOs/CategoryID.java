@@ -32,4 +32,8 @@ public class CategoryID implements ValueObject, DomainId {
     public int hashCode() {
         return categoryID.hashCode();
     }
+
+    public UUID getCategoryID () {
+        return categoryID;
+    }
 }

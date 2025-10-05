@@ -31,4 +31,8 @@ public class ProductID implements DomainId {
     public int hashCode() {
         return productID.hashCode();
     }
+
+    public UUID getProductID () {
+        return productID;
+    }
 }

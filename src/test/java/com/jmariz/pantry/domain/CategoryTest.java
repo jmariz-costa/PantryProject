@@ -4,8 +4,6 @@ import com.jmariz.pantry.VOs.CategoryID;
 import com.jmariz.pantry.VOs.Name;
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDate;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class CategoryTest {

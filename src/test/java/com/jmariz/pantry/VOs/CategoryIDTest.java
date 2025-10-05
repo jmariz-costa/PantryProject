@@ -2,6 +2,8 @@ package com.jmariz.pantry.VOs;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.UUID;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class CategoryIDTest {
@@ -95,5 +97,17 @@ class CategoryIDTest {
 
         // Assert
         assertNotEquals(hash1, categoryID2.hashCode());
+    }
+
+    @Test
+    void shouldReturnCategoryIDAsUUID () {
+        // Arrange
+        CategoryID categoryID1 = new CategoryID();
+
+        // Act
+        UUID result = categoryID1.getCategoryID();
+
+        // Assert
+        assertNotNull(result);
     }
 }

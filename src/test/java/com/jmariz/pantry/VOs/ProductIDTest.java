@@ -2,6 +2,8 @@ package com.jmariz.pantry.VOs;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.UUID;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ProductIDTest {
@@ -81,5 +83,15 @@ class ProductIDTest {
 
         // Assert
         assertEquals(hash1, productID1.hashCode());
+    }
+
+    @Test
+    void shouldReturnProductIDAsUUID() {
+        // Arrange
+        ProductID productID = new ProductID();
+
+        UUID result = productID.getProductID();
+
+        assertNotNull(result);
     }
 }
