@@ -1,8 +1,8 @@
-package com.jmariz.pantry.domain;
+package com.jmariz.pantry.domain.aggregateRoot.product;
 
-import com.jmariz.pantry.VOs.CategoryID;
-import com.jmariz.pantry.VOs.Name;
-import com.jmariz.pantry.VOs.ProductID;
+import com.jmariz.pantry.domain.valueObjects.CategoryID;
+import com.jmariz.pantry.domain.valueObjects.Name;
+import com.jmariz.pantry.domain.valueObjects.ProductID;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

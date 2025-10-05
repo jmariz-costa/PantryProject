@@ -1,4 +1,4 @@
-package com.jmariz.pantry.VOs;
+package com.jmariz.pantry.domain.valueObjects;
 
 import org.junit.jupiter.api.Test;
 

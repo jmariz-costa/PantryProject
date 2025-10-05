@@ -1,7 +1,7 @@
-package com.jmariz.pantry.domain;
+package com.jmariz.pantry.domain.aggregateRoot.category;
 
-import com.jmariz.pantry.VOs.CategoryID;
-import com.jmariz.pantry.VOs.Name;
+import com.jmariz.pantry.domain.valueObjects.CategoryID;
+import com.jmariz.pantry.domain.valueObjects.Name;
 import com.jmariz.pantry.ddd.AggregateRoot;
 
 public class Category implements AggregateRoot<CategoryID> {
