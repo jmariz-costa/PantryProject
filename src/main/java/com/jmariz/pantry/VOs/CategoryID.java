@@ -1,10 +1,11 @@
 package com.jmariz.pantry.VOs;
 
+import com.jmariz.pantry.ddd.DomainId;
 import com.jmariz.pantry.ddd.ValueObject;
 
 import java.util.UUID;
 
-public class CategoryID implements ValueObject {
+public class CategoryID implements ValueObject, DomainId {
 
     private final UUID categoryID;
 

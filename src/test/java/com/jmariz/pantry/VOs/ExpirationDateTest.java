@@ -126,10 +126,13 @@ class ExpirationDateTest {
 
     @Test
     void shouldReturnEmptyStringIfExpirationDateIsNull(){
+        // Arrange
         ExpirationDate date = new ExpirationDate(null);
 
+        // Act
         String result = date.toString();
 
+        // Assert
         assertEquals("", result);
     }
 }
